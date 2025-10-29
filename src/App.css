@@ -1,0 +1,60 @@
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import a modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Apply font globally */
+body {
+  @apply font-poppins;
+}
+
+/* Optional: full-screen kitchen background with overlay for readability */
+.kitchen-bg {
+  background-image: url('https://images.unsplash.com/photo-1606788075761-1cccd7d9f7f3?auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+/* Dark overlay to make text and input readable */
+.kitchen-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* 60% black overlay */
+}
+
+/* Centered container content */
+.kitchen-content {
+  position: relative;
+  z-index: 10; /* Above overlay */
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+/* Input styling */
+.kitchen-input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+/* Button styling */
+.kitchen-button {
+  padding: 12px 20px;
+  border-radius:
+} 

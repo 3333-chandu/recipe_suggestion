@@ -1,0 +1,105 @@
+/* Background */
+.kitchen-bg {
+  background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main container */
+.kitchen-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 650px;
+  width: 90%;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Input fields */
+.kitchen-input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Button */
+.kitchen-button {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.kitchen-button:hover {
+  background-color: #ea580c;
+}
+
+/* Recipe cards */
+.grid {
+  margin-top: 20px;
+}
+
+.bg-white\/90 {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.rounded-lg {
+  border-radius: 12px;
+}
+
+.shadow-lg {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* Text colors */
+.text-gray-200 {
+  color: #e5e7eb;
+}
+
+.text-red-300 {
+  color: #fca5a5;
+}
+
+.text-orange-200 {
+  color: #fed7aa;
+}
+
+.text-gray-800 {
+  color: #1f2937;
+}
+
+/* Grid setup */
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* For small screens */
+@media (max-width: 640px) {
+  .kitchen-content {
+    padding: 25px;
+  }
+}

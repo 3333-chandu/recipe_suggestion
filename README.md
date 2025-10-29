@@ -1,30 +1,60 @@
-# React + TypeScript + Vite
+# taylors-kitchen
+Created with CodeSandbox
+Purpose:
+This application helps users (like Taylor) find meals based on ingredients they have, their mood, or available cooking time. It fetches meal data from TheMealDB API, which is free and requires no authentication.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features:
 
-Currently, two official plugins are available:
+Input ingredients in a text field (required).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Optional filters for mood (happy, quick, relaxed) and cooking time (15, 30, 60 minutes).
 
-## Expanding the ESLint configuration
+Displays meals with name and image dynamically.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Kitchen-themed background for a pleasant cooking vibe.
 
-- Configure the top-level `parserOptions` property like this:
+Tech Stack:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+React with TypeScript: UI and state management.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+CSS: Custom styling for layout, buttons, inputs, and meal cards.
+
+Public API: TheMealDB API
+ to fetch meals.
+
+How to Run Locally:
+
+Clone the repository:
+
+git clone <your-repo-url>
+cd taylors-kitchen
+
+
+Install dependencies:
+
+npm install
+
+
+Start the development server:
+
+npm start
+
+
+Open http://localhost:3000
+ in your browser.
+
+Deployment:
+
+Can be deployed on Vercel or Netlify directly from GitHub.
+
+Ensure the build folder is set as the publish directory for deployment.
+
+Tips & Notes:
+
+Only the ingredients input is required to fetch meals.
+
+If no meals are found, try different ingredients.
+
+Ensure style.css is correctly imported in App.tsx to avoid errors.
+
+The app is fully responsive and visually designed for a kitchen-themed experience.
